@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>invisible</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <style>
 
         body {
-            width: 100vw;
-            height: 100vh;
+            width: 100%;
+            height: 100%;
             margin: 0;
             padding: 0;
             display: flex;
@@ -43,26 +43,19 @@
             margin: 0.5rem;
         }
 
-
-
-
-
-
     </style>
 </head>
-<body class="theme">
-
-    <script> 
-        AOS.init(); 
-    </script>
-
-    <a href="https://www.invisible.global">
-        <img data-aos="fade-up" class="logo" src="invisible_logo_white.png"/>
+<body>
+    <a data-aos="fade-up" data-aos-duration="1000" href="https://www.invisible.global">
+        <img class="logo" src="invisible_logo_white.png"/>
     </a>
     <br/>
-    <p data-aos="fade-up">로고를 클릭하시면 새로운 주소로 이동합니다.</p>
-    <a href="https://www.invisible.global"><p data-aos="fade-up">www.invisible.global</p></a>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <p data-aos="fade-up" data-aos-duration="1000">로고를 클릭하시면 새로운 주소로 이동합니다.</p>
+    <a data-aos="fade-up" data-aos-duration="1000" href="https://www.invisible.global"><p>www.invisible.global</p></a>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 
 </html>
