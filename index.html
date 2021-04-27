@@ -9,6 +9,11 @@
 
     <style>
 
+        html {
+            width: 100%;
+            height: 100%;
+        }
+
         body {
             width: 100%;
             height: 100%;
@@ -20,7 +25,7 @@
             align-items: center;
             background: #1f7fff;
             font-family: 'Apple SD Gothic Neo', 'dotum', 'gullim';
-            font-size: 18px;
+            font-size: 14px;
             color: #f8fcff;
         }
 
@@ -29,33 +34,61 @@
             height: auto;
         }
 
-
         a {
-            text-align: center;
-            width: 100%;
-            height: auto;
             text-decoration: underline;
             color: #f8fcff;
+            box-sizing: border-box;
+        }
 
+        img {
+            width: 100%;
+            height: auto;
         }
 
         p {
             margin: 0.5rem;
         }
 
+
+
     </style>
 </head>
 <body>
-    <a data-aos="fade-up" data-aos-duration="1000" href="https://www.invisible.global">
-        <img class="logo" src="invisible_logo_white.png"/>
+    <a
+        data-aos="zoom-in"
+        data-aos-duration='2000'
+        data-aos-once="false"
+        data-aos-offset="300"
+        class="logo" href="https://www.invisible.global">
+        <img src="invisible_logo_white.png"/>
     </a>
-    <br/>
-    <p data-aos="fade-up" data-aos-duration="1000">로고를 클릭하시면 새로운 주소로 이동합니다.</p>
-    <a data-aos="fade-up" data-aos-duration="1000" href="https://www.invisible.global"><p>www.invisible.global</p></a>
+    <br/><br/>
+
+    <p
+    data-aos="fade-up"
+    data-aos-duration='500'
+    data-aos-offset="200"
+    data-aos-delay="2500"
+    >인비저블 홈페이지가 개편되었습니다.</p>
+
+    <p
+    data-aos="fade-up"
+    data-aos-duration='500'
+    data-aos-delay="2700"
+    >로고를 클릭하시면 새로운 주소로 이동합니다.</p>
+    <p
+    data-aos="fade-up"
+    data-aos-duration='500'
+    data-aos-delay="2900"
+    >
+        <a href="https://www.invisible.global">www.invisible.global</a>
+    </p>
+
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init();
-    </script>
+        AOS.init();
+      </script>
 </body>
 
 </html>
